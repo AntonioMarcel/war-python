@@ -1,7 +1,7 @@
 from utils import VALUES
 
 class Card:
-    def __init__(self, suit, rank):
+    def __init__(self, suit: str, rank: str):
         self.suit = suit
         self.rank = rank
         self.value = VALUES[rank]

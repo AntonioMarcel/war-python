@@ -1,5 +1,4 @@
-from game import Card, Deck
+from core import Game
 
-deck = Deck()
-deck.shuffle()
-print(deck.deal())
+game = Game("xaropinho", "michael jackson")
+game.play()

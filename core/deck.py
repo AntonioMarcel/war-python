@@ -1,5 +1,5 @@
 import random
-from game.card import Card
+from .card import Card
 from utils import SUITS, RANKS
 
 class Deck:
@@ -11,15 +11,17 @@ class Deck:
         for suit in SUITS:
             for rank in RANKS:
                 card = Card(suit, rank)
-                print(card)
                 self.cards.append(card)
-        print(len(self.cards))
 
     def shuffle(self):
         random.shuffle(self.cards)
 
     def deal(self):
-        return self.cards.pop() 
-
+        return self.cards.pop()
+    
+    def __str__(self):
+        for card in self.cards:
+            print(card)
+        return f"Deck of {len(self.cards)} cards"
 
         
