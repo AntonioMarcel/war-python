@@ -1,36 +1,62 @@
-War (Python)
+# War (Python)
 
-Jogo de cartas War implementado em Python.
+Uma implementação simples do jogo de cartas "War" em Python, criada como projeto didático para demonstrar organização em módulos e lógica de jogo.
 
-Descrição
+## Funcionalidades
 
-Projeto simples que simula o jogo de cartas "War" com estrutura modular em `core/`.
+- Simulação completa de partidas entre dois jogadores
+- Implementação modular: `core/` (lógica do jogo) e `utils/` (constantes)
+- Execução via `main.py` com saída no terminal
 
-Requisitos
+## Requisitos
 
-- Python 3.8+
-- Virtualenv (recomendado)
+- Python 3.8 ou superior
+- (Recomendado) Virtualenv ou outro ambiente virtual
 
-Instalação
+## Instalação
+
+Clone o repositório e instale dependências:
 
 ```bash
+git clone <seu-repo-url>
+cd war-python
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Uso
+> Se não houver dependências externas, o `requirements.txt` pode estar vazio.
+
+## Uso
+
+Execute o jogo a partir da raiz do projeto:
 
 ```bash
 python main.py
 ```
 
-Estrutura
+O jogo exibirá o progresso da partida no terminal e o resultado final.
 
-- `core/`: lógica do jogo (cartas, baralho, jogador, jogo)
-- `utils/`: constantes e utilitários
-- `main.py`: ponto de entrada
+## Estrutura do projeto
 
-Licença
+- `main.py` — ponto de entrada da aplicação
+- `core/` — implementação das classes `Card`, `Deck`, `Player`, `Game`
+- `utils/` — constantes e utilitários auxiliares
+- `requirements.txt` — dependências do projeto
 
-Projeto pessoal — adapte conforme necessário.
+## Desenvolvimento
+
+- Faça alterações em ramos separados e abra PRs para revisão
+- Use o ambiente virtual para executar o projeto localmente
+
+## Contribuição
+
+Contribuições são bem-vindas. Abra uma issue para discutir mudanças maiores ou envie um pull request com descrições claras do que foi alterado.
+
+## Licença
+
+Projeto pessoal — ajuste a licença conforme necessário antes de publicar.
+
+## Contato
+
+Criado por Antonio Marcel. Para dúvidas ou sugestões, abra uma issue no repositório.
