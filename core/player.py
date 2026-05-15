@@ -16,6 +16,12 @@ class Player:
 
     def play_card(self):
         return self.hand.pop(0)
-        
+    
+    def cards_left(self):
+        return len(self.hand)
+
+    def can_play_war(self):
+        return len(self.hand) >= 4
+    
     def __str__(self):
         return f"{self.name} has {len(self.hand)} cards"
