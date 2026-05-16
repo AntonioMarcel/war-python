@@ -18,3 +18,5 @@ VALUES = {
     "K": 13,
     "A": 14
 }
+
+MAX_ROUNDS = 1000  # safety limit to prevent infinite games

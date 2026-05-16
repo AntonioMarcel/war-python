@@ -1,1 +1,1 @@
-from .constant import SUITS, RANKS, VALUES
+from .constant import SUITS, RANKS, VALUES, MAX_ROUNDS

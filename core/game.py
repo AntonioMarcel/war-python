@@ -1,9 +1,8 @@
 from .deck import Deck
 from .player import Player
+from utils import MAX_ROUNDS
 
 class Game:
-    MAX_ROUNDS = 1000  # safety limit to prevent infinite games
-
     def __init__(self, player1: str, player2: str):
         self.player1 = Player(player1)  
         self.player2 = Player(player2)
@@ -111,10 +110,10 @@ class Game:
         self.setup_game()
 
         # Play until one player runs out of cards
-        while self.player1.has_cards() and self.player2.has_cards() and self.round_counter < self.MAX_ROUNDS:  # safety limit to prevent infinite games
+        while self.player1.has_cards() and self.player2.has_cards() and self.round_counter < MAX_ROUNDS:  # safety limit to prevent infinite games
             self.play_round()
 
-        if self.round_counter >= self.MAX_ROUNDS:
+        if self.round_counter >= MAX_ROUNDS:
             print("Maximum rounds reached. It's a draw!")
         elif self.player1.has_cards():
             print(f"{self.player1.name} wins the game!")
