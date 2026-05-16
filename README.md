@@ -22,10 +22,9 @@ git clone <seu-repo-url>
 cd war-python
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 ```
 
-> Se não houver dependências externas, o `requirements.txt` pode estar vazio.
+> Não há uso de dependências externas, portanto não há arquivo de `requirements.txt`.
 
 ## Uso
 
@@ -42,20 +41,6 @@ O jogo exibirá o progresso da partida no terminal e o resultado final.
 - `main.py` — ponto de entrada da aplicação
 - `core/` — implementação das classes `Card`, `Deck`, `Player`, `Game`
 - `utils/` — constantes e utilitários auxiliares
-- `requirements.txt` — dependências do projeto
-
-## Desenvolvimento
-
-- Faça alterações em ramos separados e abra PRs para revisão
-- Use o ambiente virtual para executar o projeto localmente
-
-## Contribuição
-
-Contribuições são bem-vindas. Abra uma issue para discutir mudanças maiores ou envie um pull request com descrições claras do que foi alterado.
-
-## Licença
-
-Projeto pessoal — ajuste a licença conforme necessário antes de publicar.
 
 ## Contato
 
